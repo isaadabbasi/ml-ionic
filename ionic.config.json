@@ -1,0 +1,7 @@
+{
+  "name": "ml-client-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
