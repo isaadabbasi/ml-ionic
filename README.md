@@ -13,4 +13,4 @@ This repository will help you learn find a path to get into machine learning. Yo
 
 
 🤖 says: 🦁 "Dog Found" .  
-As our model as not very well trained **We are open for contributions**. 
+As our models are not very well trained **We are open for contributions**. 
