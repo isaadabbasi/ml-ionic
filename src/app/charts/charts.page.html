@@ -5,5 +5,21 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="practice" checked>
+        Practice
+      </ion-segment-button>
+      <ion-segment-button value="presentation">
+        Presentation
+      </ion-segment-button>
+    </ion-segment>
+    
+    <div *ngIf="activeMode === 'practice' else presentation">
+        <app-svgplay></app-svgplay>
+    </div>
+
+    <ng-template #presentation>
+      presentation
+    </ng-template>
 
 </ion-content>

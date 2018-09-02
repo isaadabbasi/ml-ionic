@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ChartsPage } from './charts.page';
+import { SvgplayComponent } from './practice/svgplay/svgplay.component';
+
 
 const routes: Routes = [
   {
@@ -19,8 +21,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [ChartsPage]
+  declarations: [
+    ChartsPage,
+    SvgplayComponent
+  ]
 })
 export class ChartsPageModule {}
