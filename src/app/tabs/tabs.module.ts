@@ -6,20 +6,20 @@ import { FormsModule } from '@angular/forms';
 
 import { TabsPageRoutingModule } from './tabs.router.module';
 
+import { ChartsPageModule } from '../charts/charts.module';
+import { MachineLearningPageModule } from '../machine-learning/machine-learning.module';
+import { QuizPageModule } from '../quiz/quiz.module';
 import { TabsPage } from './tabs.page';
-import { ContactPageModule } from '../contact/contact.module';
-import { AboutPageModule } from '../about/about.module';
-import { HomePageModule } from '../home/home.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
-    FormsModule,
     TabsPageRoutingModule,
-    HomePageModule,
-    AboutPageModule,
-    ContactPageModule
+    FormsModule,
+    ChartsPageModule,
+    MachineLearningPageModule,
+    QuizPageModule,
   ],
   declarations: [TabsPage]
 })

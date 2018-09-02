@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
-import { HomePage } from '../home/home.page';
-import { AboutPage } from '../about/about.page';
-import { ContactPage } from '../contact/contact.page';
+
+import { ChartsPage } from '../charts/charts.page';
+import { MachineLearningPage } from '../machine-learning/machine-learning.page';
+import { QuizPage } from '../quiz/quiz.page';
 
 const routes: Routes = [
   {
@@ -12,25 +13,25 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'home',
-        outlet: 'home',
-        component: HomePage
+        path: 'quiz',
+        outlet: 'quiz',
+        component: QuizPage
       },
       {
-        path: 'about',
-        outlet: 'about',
-        component: AboutPage
+        path: 'charts',
+        outlet: 'charts',
+        component: ChartsPage
       },
       {
-        path: 'contact',
-        outlet: 'contact',
-        component: ContactPage
+        path: 'ml',
+        outlet: 'ml',
+        component: MachineLearningPage
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/(home:home)',
+    redirectTo: '/tabs/(quiz:quiz)',
     pathMatch: 'full'
   }
 ];
