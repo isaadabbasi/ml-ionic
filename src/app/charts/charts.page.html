@@ -6,10 +6,10 @@
 
 <ion-content padding>
   <ion-segment (ionChange)="segmentChanged($event)">
-      <ion-segment-button value="practice" checked>
+      <ion-segment-button value="practice">
         Practice
       </ion-segment-button>
-      <ion-segment-button value="presentation">
+      <ion-segment-button value="presentation" checked>
         Presentation
       </ion-segment-button>
     </ion-segment> 
@@ -20,7 +20,9 @@
       </div>
   
       <ng-template #presentation>
-        presentation
+        <app-start-barchart></app-start-barchart>
+        <br/> <hr/> <br/>
+        <gdp-scatter-plot></gdp-scatter-plot>
       </ng-template>
     </div>
      
