@@ -107,7 +107,6 @@ export class StartBarchartComponent implements OnInit {
     } else 
       this.label.text('Profit');
 
-    console.log('updated: ', data, this.chartType)
     const { height } = this.dimentions;
     this.x.domain(data.map(d => d.month)); //respects the indexing of array
     this.y.domain([0, d3.max(data, d => d[this.chartType]],null);
