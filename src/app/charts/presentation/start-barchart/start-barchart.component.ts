@@ -18,7 +18,7 @@ export class StartBarchartComponent implements OnInit {
   data: Revenue[];
   dimentions;
   label;
-  svg; 
+  svg;  
   x; xAxisGroup; 
   y; yAxisGroup;
 
@@ -109,8 +109,9 @@ export class StartBarchartComponent implements OnInit {
 
     const { height } = this.dimentions;
     this.x.domain(data.map(d => d.month)); //respects the indexing of array
-    this.y.domain([0, d3.max(data, d => d[this.chartType]],null);
-
+    /* tslint:disable */
+    this.y.domain([0, d3.max(data, d => d[this.chartType]]);
+    /* tslint:enable */
     const xAxisCall = d3.axisBottom(this.x);
     this.xAxisGroup.transition(t700).call(xAxisCall);
 

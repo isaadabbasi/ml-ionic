@@ -3,7 +3,9 @@
 </ion-card-header>
 
 <div id="start-bar-chart">
-  <ion-fab bottom end (click)="updateChart(data)">
-    <ion-button>+</ion-button>
+  <ion-fab vertical="middle" horizontal="center" slot="fixed" (click)="updateChart(data)">
+    <ion-fab-button mini>
+      <ion-icon name="refresh"></ion-icon>
+    </ion-fab-button>
   </ion-fab>
 </div>
