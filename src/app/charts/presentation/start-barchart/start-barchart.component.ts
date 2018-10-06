@@ -110,7 +110,7 @@ export class StartBarchartComponent implements OnInit {
     const { height } = this.dimentions;
     this.x.domain(data.map(d => d.month)); //respects the indexing of array
     /* tslint:disable */
-    this.y.domain([0, d3.max(data, d => d[this.chartType]]);
+    this.y.domain([0, d3.max(data, d => d[this.chartType])]);
     /* tslint:enable */
     const xAxisCall = d3.axisBottom(this.x);
     this.xAxisGroup.transition(t700).call(xAxisCall);
