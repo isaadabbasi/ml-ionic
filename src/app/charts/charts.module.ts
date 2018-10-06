@@ -6,6 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ChartsPage } from './charts.page';
+import { SvgplayComponent } from './practice/svgplay/svgplay.component';
+import { StartBarchartComponent } from './presentation/start-barchart/start-barchart.component';
+import { GdpScatterPlotComponent } from './presentation/gdp-scatter-plot/gdp-scatter-plot.component';
+
 
 const routes: Routes = [
   {
@@ -19,8 +23,13 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [ChartsPage]
+  declarations: [
+    ChartsPage,
+    SvgplayComponent,
+    StartBarchartComponent,
+    GdpScatterPlotComponent,
+  ]
 })
 export class ChartsPageModule {}
